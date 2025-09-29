@@ -1,7 +1,14 @@
 name: MoonShard
-version: '1.0'
+version: 1.0
 main: com.yourpackage.MoonShard
-api-version: '1.21'
-load: STARTUP
-authors: [ Weathall ]
-description: No Description
+api-version: 1.21
+depend: [PlaceholderAPI]
+commands:
+  moonshard:
+    description: Manage MoonShard currency.
+    usage: /moonshard <give|take|check|set> <player> [amount]
+    permission: moonshard.admin
+permissions:
+  moonshard.admin:
+    description: Allows managing MoonShard balances.
+    default: op

@@ -1,0 +1,20 @@
+# 資料庫設置
+Database:
+  # 資料庫類型，支援：SQLite 或 MySQL
+  Type: SQLite
+  # 僅在 MySQL 模式下需要
+  MySQL:
+    Host: 127.0.0.1
+    Port: 3306
+    Username: root
+    Password: '12345'
+    Database: moonshard
+
+# 語言設定 (en_US 或 zh_TW)
+language: en_US
+
+# 初始餘額
+starting-balance: 100
+
+# 是否啟用日誌記錄到 plugin.log
+enable-logging: false
